@@ -1,13 +1,23 @@
-<form method="POST" action="/new">
-    <h1>Message</h1>
-    <div>
-        <label>Your name: </label>
-        <input type="text" id="author" name="author">
-    </div>
+<html>
+    <head>
+        <title><%= title %></title>
+        <!-- <link rel="stylesheet" href="./styles.css"> -->
+      </head>
+      <body>
+        <%- include('navbar', {links: locals.links}) %>
+        <form method="POST" action="/new">
+            <h1>Message</h1>
+            <div>
+                <label>Your name: </label>
+                <input type="text" id="author" name="author">
+            </div>
+        
+            <div>
+                <label>Message: </label>
+                <input type="text" id="messageText" name="messageText">
+            </div>
+            <button type="submit">Submit</button>
+         </form>
+      </body>
+</html>
 
-    <div>
-        <label>Message: </label>
-        <input type="text" id="messageText" name="messageText">
-    </div>
-    <button type="submit">Submit</button>
- </form>
