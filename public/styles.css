@@ -1,0 +1,98 @@
+body {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 90vw;
+}
+
+.container {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    min-width: 300px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.author-message {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.date {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navigation {
+    background-color: rgb(29, 114, 211);
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.view {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.buttons {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+button:hover {
+    cursor: pointer;
+}

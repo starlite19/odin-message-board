@@ -1,18 +1,23 @@
 <html>
-    <head>
-        <title><%= title %></title>
-        <link rel="stylesheet" href="./styles.css">
-      </head>
-      <body>
-        <%- include('navbar', {links: locals.links}) %>
-            <h1>Message</h1>
-            <div>
-                From: <%=message.user %>
-            </div>
-            <div>Date: <%=message.added %></div>
-            <div>Message:</div>
-            <div>
-                <%= message.text %>
-            </div>
-      </body>
+
+<head>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Message</h1>
+    <div class="board">
+      <div>
+        <strong>From: </strong> <%= message?.user || 'Anonymous'  %>
+      </div>
+      <div><strong>Date: </strong> <%= message?.added || 'No date' %></div>
+      <div class="text"><strong>Message:</strong><%= message?.text || '' %></div>
+    </div>
+
+    <a class="navigation" href="/">Back</a>
+  </div>
+</body>
+
 </html>

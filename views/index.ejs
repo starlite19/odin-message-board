@@ -1,19 +1,32 @@
 <html>
-    <head>
-        <title><%= title %></title>
-        <link rel="stylesheet" href="./styles.css">
-      </head>
-      <body>
-        <%- include('navbar', {links: locals.links}) %>
-        <ul><% messages.map((message) => { %>
-            <li>
-              <div>
-                <%= message.user %> - <%= message.added %>: <%= message.text %>
-              </div>
-              <a href="messages/<%= message.id %>">View</a>
-              </li>
-          <% }) %>
-            
-          </ul>
-      </body>
+
+<head>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Messages</h1>
+    <div class="board">
+      <% messages.map((message) => { %>
+      <div class="message">
+        <div class="left">
+          <div class="author-message">
+            <div class="author"><%= message.user %>: </div>
+            <div class="text"><%= message.text %></div>
+          </div>
+
+          <div class="date"><%= message.added %></div>
+        </div>
+        <a class="view" href="messages/<%= message.id %>">View</a>
+      </div>
+
+      <% }) %>
+    </div>
+    <a class="navigation" href="/new">New Message</a>
+  </div>
+
+</body>
+
 </html>
