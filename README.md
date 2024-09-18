@@ -1,5 +1,7 @@
 # ODIN Mini Message Board
-Project deployed on 
+Project deployed on https://odin-message-board-9ht5.onrender.com
+
+- Note that it may take a while to load because the application is asleep
 
 This project demonstrates the concepts of building a basic Express app using the following knowledge:
 - EJS, CSS
@@ -12,5 +14,5 @@ Functionality:
 - Navigate between routes
 
 Missing functionality:
-- Messages are not saved (i.e. disappear on refresh)
-- Cannot not delete or edit messages
+- Is not integrated with a database to save messages
+- Cannot delete or edit messages
